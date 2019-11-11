@@ -20,7 +20,6 @@ def calculate_farenheit():
     
     except ValueError:
         print("Not a Number")
-
     finally:
         print()
         print("Thanks For Using The Program")
