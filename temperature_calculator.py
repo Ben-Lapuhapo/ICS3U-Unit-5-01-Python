@@ -9,13 +9,21 @@ def calculate_farenheit():
     # calculate area
 
     # input
-    degrees_celsius = int(input("Enter a Temperature in Celsius: "))
+    degrees_celsius = input("Enter a Temperature in Celsius: ")
+    print()
 
-    # process
-    degrees_farenheit = (9/5) * degrees_celsius + 32
+    # process and output
+    try:
+        degrees_celsius_int = int(degrees_celsius)
+        degrees_farenheit = (9/5) * degrees_celsius_int + 32
+        print("The Temperature in Farenheit is: {0} ".format(degrees_farenheit))
+    
+    except ValueError:
+        print("Not a Number")
 
-    # output
-    print("The Temperature in Farenheit is: {0} ".format(degrees_farenheit))
+    finally:
+        print()
+        print("Thanks For Using The Program")
 
 
 def main():
